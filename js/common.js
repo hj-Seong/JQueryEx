@@ -15,9 +15,9 @@ $(function(win){
 	}
 
 	//문서의 화면 크기 
-	const sc_w1 = scrollShowHide("hidden");
-	const sc_w2 = scrollShowHide("scroll");
-	const sc_w3 = sc_w1 - sc_w2;
+	var sc_w1 = scrollShowHide("hidden"),
+		sc_w2 = scrollShowHide("scroll"),
+		sc_w3 = sc_w1 - sc_w2;
 
 	if(sc_w3 > 0) {
 					deviceSize.pc = deviceSize.pc -  sc_w3;
@@ -87,7 +87,10 @@ $(function(win){
 						else {
 						// PC와 태블릿일때
 						/* 직접 작성할 공간 */
-
+							//모든 보이는 서브메뉴를 닫는다
+							$("#gnb ul ul:visible").slideUp(300);
+							//현재 이벤트로 선택된 a태그(메뉴)의 형제(서브메뉴)를 보여준다
+							$ts.next().stop(true,true).slideDown(300);
 
 						}
 					} 
@@ -99,7 +102,10 @@ $(function(win){
 					//글로벌네비게이션바 닫는 애니메이션
 					function gnbleave() {
 						/* 직접 작성할 공간 */
-
+						// 보이는 전체 서브메뉴를 닫고
+						$("#gnb ul ul:visible").slideUp(300);
+						// a태그의 클래스 on을 제거
+						$("#gnb>ul>l1>a").removeClass("on");
 					}
 
 
