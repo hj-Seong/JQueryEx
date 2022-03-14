@@ -2,6 +2,11 @@ $(function(){
 
 	// 슬릭 추가 및 속성 변경
 	/* 직접 작성할 공간 */
+	$(".main_visual_slide").slick({
+		autoplay:true,
+		autoplaySpeed : 3000,
+		dots : true
+	});
 
 
 

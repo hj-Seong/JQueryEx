@@ -5,7 +5,7 @@
 reset.css 를 html에 스타일시트로 링크를 거는 대신에 import를 이용하여 들고 옴 
 html에 다시 걸어줄 필요가 없다
 */
-@import url(reset.css);
+@import url(./reset.css);
 
 /* 모든 요소 박스 사이즈로 사용 */
 *, *:after, *:before{box-sizing:border-box;}
