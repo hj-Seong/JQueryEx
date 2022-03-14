@@ -51,8 +51,10 @@ body{
 
 /* 글로벌 네비게이션 바 영역 */
 /* 직접 작성할 공간 */
-
-
+#gnb { position: absolute; left: 0; bottom: 0; width: 100%; z-index: 100;}
+#gnb > ul > li { width: 25%; float: left; position: relative;}
+#gnb > ul > li > a { color: #fff; font-size: 18px; text-align: center;
+                    display: block;  height: 45px; line-height: 45px; }
 
 /* 글로벌 네비게이션 바 영역 중 서브메뉴  */
 /* 직접 작성할 공간 */
