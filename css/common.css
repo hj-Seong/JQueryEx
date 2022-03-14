@@ -60,10 +60,10 @@ body{
 /* 직접 작성할 공간 */
 #gnb ul ul {
     display: none;
-    position: absolute; left: 50%; top:45px;
+    position: absolute; left: 50%; 
     width: 180px; margin-left: -90px;
     background-color: #fff; border: #027373 1px solid;
-    border-top: none; border-radius: 0 0 7px 7px; font-size: 13px;
+    border-top: none; border-radius: 0 0 7px 7px;  font-size: 13px;
 }
 #gnb ul ul a { display: block;
     height: 40px; line-height: 40px; text-align: center;}

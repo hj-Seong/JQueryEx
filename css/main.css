@@ -171,7 +171,7 @@
     font-size: 12px;
 }
 
-/* 공지사항 섹션 중 선택되지 않은 섹션 숨김 */
+/* 공지사항 섹션 중 탭 컨테이너를 모두 숨김 */
 #notice_tab_wrap > div{
     display: none;
 }
